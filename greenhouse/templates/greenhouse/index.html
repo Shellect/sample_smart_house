@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="{% static 'greenhouse/main.bundle.js' %}"></script>
     <title>Green house</title>
 </head>
 <body>
@@ -33,11 +32,15 @@
                 <div class="col m-3 p-3 rounded bg-dark">
                     <h5>Освещение</h5>
                     <div class="d-grid">
-                        <button type="button" class="btn btn-success" id="light-toggler">ON</button>
+                        <button type="button" class="btn btn-success" id="green-light-toggler">Toggle</button>
+                    </div>
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-danger" id="red-light-toggler">Toggle</button>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="{% static 'greenhouse/main.bundle.js' %}"></script>
 </body>
 </html>
