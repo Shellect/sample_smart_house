@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'greenhouse/main.bundle.js' %}"></script>
+    <title>Green house</title>
+</head>
+<body>
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <h1 class="text-success">Green House</h1>
+                </div>
+                <div class="col-4">
+                    <h2 class="mx-3">Гостинная</h2>
+                </div>
+                <div class="col-4"></div>
+            </div>
+        </div>
+    </header>
+    <main class="bg-black text-white vh-100">
+        <div class="container">
+            <div class="row">
+                <div class="col m-3 p-3 rounded bg-dark">
+                    <h5>Комнаты</h5>
+                </div>
+                <div class="col m-3 p-3 rounded bg-dark">
+                    <h5>Сценарии</h5>
+                </div>
+                <div class="col m-3 p-3 rounded bg-dark">
+                    <h5>Освещение</h5>
+                    <div class="d-grid">
+                        <button type="button" class="btn btn-success" id="light-toggler">ON</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
